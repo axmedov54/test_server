@@ -5,11 +5,11 @@ import json
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
 from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
-
 from buttons import *
-
+from aiogram import Bot, Dispatcher
+from aiogram.client.session.aiohttp import AiohttpSession
+session = AiohttpSession(proxy="http://proxy.server:3128")
 TOKEN = "8971908237:AAHliNvjidGxoVBU5p2PgE01wnpIgoWwRFg"
-
 bot = Bot(token=TOKEN)
 
 dp = Dispatcher()
